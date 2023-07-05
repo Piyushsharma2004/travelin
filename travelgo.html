@@ -1,0 +1,776 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <link rel="icon"
+        href="https://lh3.googleusercontent.com/u/1/drive-viewer/AFGJ81p5G5gywfkfUvL4BeFwgDnQEas0_bueae2tjlYOIhRtdiuaUG0RucJkvy16DUYO-VFyBKkzxccHDQDvm0JMG8LAKlydSg=w1852-h932"
+        type="image/icon type">
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="travelgo.css" />
+</head>
+
+<body>
+    <!--navigation-section-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img
+                    src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFGJ81p5G5gywfkfUvL4BeFwgDnQEas0_bueae2tjlYOIhRtdiuaUG0RucJkvy16DUYO-VFyBKkzxccHDQDvm0JMG8LAKlydSg=w1852-h932"
+                    class="company-logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Profile </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Trip</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Hotel Facilities
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> Banquet</a></li>
+                            <li><a class="dropdown-item" href="#">Conference and meeting</a></li>
+                            <li><a class="dropdown-item" href="#">Fitness room</a></li>
+                            <li><a class="dropdown-item" href="#">Health club</a></li>
+                            <li><a class="dropdown-item" href="#">Sauna and steam bath</a></li>
+                            <li><a class="dropdown-item" href="#">Luggage storage</a></li>
+                            <li><a class="dropdown-item" href="#">Summer terrace</a></li>
+                            <li><a class="dropdown-item" href="#">Non-smoking rooms</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--nav-bar-bttom-->
+    <div class="nav-tag">
+        <ul class="nav nav-pills">
+            <li>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Book a stay
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Search your Destination</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="input-group mb-3">
+                                    <!--modal-for,-section-->
+
+                                    <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                                        placeholder="Select location">
+
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+
+                                        <li><a class="dropdown-item" href="#">Select location</a></li>
+                                        <li><a class="dropdown-item" href="#">San,Jacinto,USA</a></li>
+                                        <li><a class="dropdown-item" href="#">North Dakota, Canada</a></li>
+                                        <li><a class="dropdown-item" href="#">West Virginia Paris</a></li>
+                                        <li><a class="dropdown-item" href="#">Delhi,india</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label mb-0">Check in</label>
+                                    <input type="text" class="form-control flatpickr flatpickr-input"
+                                        data-date-format="d M Y" placeholder="Select date" readonly="readonly">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label mb-0">Check out</label>
+                                    <input type="text" class="form-control flatpickr flatpickr-input"
+                                        data-date-format="d M Y" placeholder="Select date" readonly="readonly">
+                                </div>
+                                <div class="col-12">
+                                    <!-- Dropdown input -->
+                                    <label class="form-label mb-0">Guests &amp; rooms</label>
+                                    <div class="dropdown guest-selector me-2">
+                                        <input type="text"
+                                            class="form-guest-selector form-control selection-result show"
+                                            value="2 Guests 1 Room" data-bs-auto-close="outside"
+                                            data-bs-toggle="dropdown" aria-expanded="true">
+
+                                        <!-- dropdown items -->
+                                        <ul class="dropdown-menu guest-selector-dropdown show" data-bs-popper="static">
+                                            <!-- Adult -->
+                                            <li class="d-flex justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0">Adults</h6>
+                                                    <small>Ages 13 or above</small>
+                                                </div>
+
+                                                <div class="hstack gap-1 align-items-center">
+                                                    <button type="button" class="btn btn-link adult-remove p-0 mb-0"><i
+                                                            class="bi bi-dash-circle fs-5 fa-fw"></i></button>
+                                                    <h6 class="guest-selector-count mb-0 adults">2</h6>
+                                                    <button type="button" class="btn btn-link adult-add p-0 mb-0"><i
+                                                            class="bi bi-plus-circle fs-5 fa-fw"></i></button>
+                                                </div>
+                                            </li>
+
+                                            <!-- Divider -->
+                                            <li class="dropdown-divider"></li>
+
+                                            <!-- Child -->
+                                            <li class="d-flex justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0">Child</h6>
+                                                    <small>Ages 13 below</small>
+                                                </div>
+
+                                                <div class="hstack gap-1 align-items-center">
+                                                    <button type="button" class="btn btn-link child-remove p-0 mb-0"><i
+                                                            class="bi bi-dash-circle fs-5 fa-fw"></i></button>
+                                                    <h6 class="guest-selector-count mb-0 child">0</h6>
+                                                    <button type="button" class="btn btn-link child-add p-0 mb-0"><i
+                                                            class="bi bi-plus-circle fs-5 fa-fw"></i></button>
+                                                </div>
+                                            </li>
+
+                                            <!-- Divider -->
+                                            <li class="dropdown-divider"></li>
+
+                                            <!-- Rooms -->
+                                            <li class="d-flex justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0">Rooms</h6>
+                                                    <small>Max room 8</small>
+                                                </div>
+
+                                                <div class="hstack gap-1 align-items-center">
+                                                    <button type="button" class="btn btn-link room-remove p-0 mb-0"><i
+                                                            class="bi bi-dash-circle fs-5 fa-fw"></i></button>
+                                                    <h6 class="guest-selector-count mb-0 rooms">1</h6>
+                                                    <button type="button" class="btn btn-link room-add p-0 mb-0"><i
+                                                            class="bi bi-plus-circle fs-5 fa-fw"></i></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <a href="#" class="text-primary-hover text-decoration-underline">Have a promo
+                                        code?</a>
+                                    <button class="btn btn-primary-soft w-100 mt-3 mb-0">Check Availability</button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Hotel Type</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">All</a></li>
+                    <li><a class="dropdown-item" href="#">Hotels</a></li>
+                    <li><a class="dropdown-item" href="#">Villas</a></li>
+                    <li><a class="dropdown-item" href="#">Palace</a></li>
+                    <li><a class="dropdown-item" href="#">Resorts</a></li>
+                    <li><a class="dropdown-item" href="#">Restaurants</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Find a hotel</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Category</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Beach</a></li>
+                    <li><a class="dropdown-item" href="#">City</a></li>
+                    <li><a class="dropdown-item" href="#">Spa</a></li>
+                    <li><a class="dropdown-item" href="#">Wildlife</a></li>
+                    <li><a class="dropdown-item" href="#">Golf</a></li>
+                    <li><a class="dropdown-item" href="#">Heritage</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">help</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--Carosel-section-->
+    <div id="carouselExampleCaptions" class="carousel slide my-3 mx-4 mb-3">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://meetings.quebec-cite.com/sites/qda/files/styles/landscape_wide_desktop/public/blog/qda-hotel-pur-quebec-double-guest-room-entete.jpg?itok=QynT8GpF"
+                    alt="image" class="w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mordern Luxury in Manhattan</h5>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/5fa9bf2cfdb88e13976b9a97/1661813866885-IZPF9NEZ05NXVFM9B8GH/vail-luxury-hotels-four-seasons-resort-winter-1600x800-1-1600x800.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Taking Luxury hospitality to new height</h5>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://munnikbrandadvies.nl/wp-content/uploads/2014/04/Grand-Hotel-Frans-Hals_1600x800.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>A world of Luxury Awaits you</h5>
+
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="details-heading">We always provide the best for our hotel visitors. We are happy to help you.
+                </h1>
+                <p class="details-pera">We focus a great deal on the understanding of behavioral psychology and
+                    influence triggers which are crucial for becoming a well-rounded Digital Marketer. We understand
+                    that theory is important to build a solid foundation, we understand that theory alone isn't going to
+                    get the job done.</p>
+            </div>
+
+            <!-- Counter -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="card card-body bg-primary bg-opacity-10 vstack gap-4 justify-content-center h-100 p-4">
+                    <!-- Counter item -->
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="purecounter text-primary mb-0" data-purecounter-start="0" data-purecounter-end="10"
+                            data-purecounter-delay="200" data-purecounter-duration="0">10</h3>
+                        <h6 class="fw-normal mb-0">Total Hotels</h6>
+                    </div>
+
+                    <!-- Counter item -->
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-center me-3">
+                            <h3 class="purecounter text-primary mb-0" data-purecounter-start="0"
+                                data-purecounter-end="200" data-purecounter-delay="300" data-purecounter-duration="0">
+                                200</h3>
+                            <span class="h3 text-primary mb-0">+</span>
+                        </div>
+                        <h6 class="fw-normal mb-0">Total Staff</h6>
+                    </div>
+
+                    <!-- Counter item -->
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-center me-3">
+                            <h3 class="purecounter text-primary mb-0" data-purecounter-start="0"
+                                data-purecounter-end="50" data-purecounter-delay="300" data-purecounter-duration="0">50
+                            </h3>
+                            <span class="h3 text-primary mb-0">+</span>
+                        </div>
+                        <h6 class="fw-normal mb-0">Amazing Services</h6>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <img src="https://booking.webestica.com/assets/images/about/07.jpg" class="detail-image" />
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 ">
+                <img src="https://booking.webestica.com/assets/images/offer/08.jpg" class="detail-image" />
+            </div>
+
+        </div>
+    </div>
+
+    <!--Explore Nearby-->
+
+    <div class="container">
+        <!-- Title -->
+        <div class="row ">
+            <div class="col-12 text-center">
+                <h2 class="expllore-heading my-4">Offer of the months</h2>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="offers-section-card ">
+                    <img src="https://booking.webestica.com/assets/images/offer/02.jpg" class="offers-section-img" />
+                    <h1 class="offers-section-tag">Pass Holder PAckage</h1>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="offers-section-card ">
+                    <img src="https://booking.webestica.com/assets/images/offer/03.jpg" class="offers-section-img" />
+                    <h1 class="offers-section-tag">More Sun, More Fun</h1>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="offers-section-card ">
+                    <img src="https://booking.webestica.com/assets/images/offer/04.jpg" class="offers-section-img" />
+                    <h1 class="offers-section-tag">Elevate Your Stay</h1>
+                </div>
+            </div>
+            <div class=" col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="offers-section-card ">
+                    <img src="https://booking.webestica.com/assets/images/offer/07.jpg" class="offers-section-img" />
+                    <h1 class="offers-section-tag">A Stay That Gives Back</h1>
+                </div>
+            </div>
+            <div class=" col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="offers-section-card ">
+                    <img src="https://booking.webestica.com/assets/images/offer/06.jpg" class="offers-section-img" />
+                    <h1 class="offers-section-tag">Spa Package Offer</h1>
+                </div>
+            </div>
+            <div class=" col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="offers-section-card ">
+                    <img src="https://booking.webestica.com/assets/images/offer/05.jpg" class="offers-section-img" />
+                    <h1 class="offers-section-tag">View All Offers</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--"Luxury-section-->
+
+    <div class="Luxury-section my-4 d-flex flex-column justify-content-center">
+        <h1 class="Luxury-section-heading">A World Of Luxury <br>Awaits you</h1>
+        <p class="Luxury-section-pera">Discover a New Look of Luxury Resorts.</p>
+        <div>
+            <button class="Luxury-section-btn btn btn-dark">Discover More</button>
+        </div>
+    </div>
+
+    <!--Featured Hotels-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="Featured-Hotels-heading">Featured Hotels</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+
+
+
+            <!--1-->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="Featured-Hotels-card">
+                    <img src="https://booking.webestica.com/assets/images/category/hotel/01.jpg"
+                        class="Featured-Hotels-image" />
+                    <button class="Featured-Hotels-location btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="icon-location bi bi-geo-alt"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>New York</button>
+                    <h1 class="Featured-Hotels-name">Baga Comfort</h1>
+                    <div class="d-flex flex-row">
+                        <h2 class="Featured-Hotels-price">$455/starting at</h2>
+                        <h2 class="Featured-Hotels-rating">4.5<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="icon-star bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg></h2>
+                    </div>
+                </div>
+            </div>
+            <!--2-->
+            <div class=" col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="Featured-Hotels-card">
+                    <img src="https://booking.webestica.com/assets/images/category/hotel/02.jpg"
+                        class="Featured-Hotels-image" />
+                    <button class="Featured-Hotels-location btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="icon-location bi bi-geo-alt"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>India</button>
+                    <h1 class="Featured-Hotels-name">New Apollo Hotel</h1>
+                    <div class="d-flex flex-row">
+                        <h2 class="Featured-Hotels-price">$585/starting at</h2>
+                        <h2 class="Featured-Hotels-rating">4.8<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="icon-star bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg></h2>
+                    </div>
+
+                </div>
+            </div>
+            <!---3-->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="Featured-Hotels-card">
+                    <img src="https://booking.webestica.com/assets/images/category/hotel/03.jpg"
+                        class="Featured-Hotels-image" />
+                    <button class="Featured-Hotels-location btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="icon-location bi bi-geo-alt"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>Los Angeles</button>
+                    <h1 class="Featured-Hotels-name">New Age Hotel</h1>
+                    <div class="d-flex flex-row">
+                        <h2 class="Featured-Hotels-price">$385/starting at</h2>
+                        <h2 class="Featured-Hotels-rating">4.5<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="icon-star bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg></h2>
+                    </div>
+
+                </div>
+            </div>
+            <!--4-->
+            <div class=" col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="Featured-Hotels-card">
+                    <img src="https://booking.webestica.com/assets/images/category/hotel/04.jpg"
+                        class="Featured-Hotels-image" />
+                    <button class="Featured-Hotels-location btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="icon-location bi bi-geo-alt"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>Chicago</button>
+                    <h1 class="Featured-Hotels-name">Helios Beach Resort</h1>
+                    <div class="d-flex flex-row">
+                        <h2 class="Featured-Hotels-price">$665/starting at</h2>
+                        <h2 class="Featured-Hotels-rating">4.9<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="icon-star bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg></h2>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--our Paterner-->
+    <div>
+        <h1 class="our-paterner-heading">Our Paterner</h1>
+        <div class="container-fluid">
+            <div class="row ">
+
+                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2"><img
+                        src="https://booking.webestica.com/assets/images/client/01.svg"
+                        class="w-75 our-paterner-logo" /></div>
+                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2"><img
+                        src="https://booking.webestica.com/assets/images/client/02.svg"
+                        class="w-75 our-paterner-logo" /></div>
+                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2"><img
+                        src="https://booking.webestica.com/assets/images/client/03.svg"
+                        class="w-75 our-paterner-logo" /></div>
+                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2"><img
+                        src="https://booking.webestica.com/assets/images/client/04.svg"
+                        class="w-75 our-paterner-logo" /></div>
+                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2"><img
+                        src="https://booking.webestica.com/assets/images/client/05.svg"
+                        class="w-75 our-paterner-logo" /></div>
+                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2"><img
+                        src="https://booking.webestica.com/assets/images/client/06.svg"
+                        class="w-75 our-paterner-logo" /></div>
+            </div>
+
+        </div>
+    </div>
+    <!--Popular Destination Near me-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="Featured-Hotels-heading">Popular Destination Nearby</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+
+
+
+            <!--1-->
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="Featured-Hotels-card flight-card-1">
+                    <img src="	https://booking.webestica.com/assets/images/category/flight/01.jpg"
+                        class="Featured-Hotels-image" />
+                    <div class="d-flex flex-row">
+                        <h1 class="Featured-Hotels-name">Thailand</h1>
+                        <h2 class="Featured-Hotels-rating">4.5<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="icon-star bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg></h2>
+                    </div>
+
+                    <h2 class="Featured-Hotels-destination">The next flight is on 20th Jun</h2>
+
+                </div>
+            </div>
+            <!--2-->
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="Featured-Hotels-card flight-card-1">
+                    <img src="	https://booking.webestica.com/assets/images/category/flight/02.jpg"
+                        class="Featured-Hotels-image" />
+                    <div class="d-flex flex-row">
+                        <h1 class="Featured-Hotels-name">Hong Kong</h1>
+                        <h2 class="Featured-Hotels-rating">4.6<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="icon-star bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg></h2>
+                    </div>
+
+                    <h2 class="Featured-Hotels-destination">Daily 1 flight</h2>
+
+                </div>
+            </div>
+            <!---3-->
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="Featured-Hotels-card flight-card-1">
+                    <img src="	https://booking.webestica.com/assets/images/category/flight/03.jpg"
+                        class="Featured-Hotels-image" />
+                    <div class="d-flex flex-row">
+                        <h1 class="Featured-Hotels-name">Maldives</h1>
+                        <h2 class="Featured-Hotels-rating">4.3<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="icon-star bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg></h2>
+                    </div>
+
+                    <h2 class="Featured-Hotels-destination">2 flight every week</h2>
+
+                </div>
+            </div>
+            <!--4-->
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="Featured-Hotels-card flight-card-1">
+                    <img src="	https://booking.webestica.com/assets/images/category/flight/04.jpg"
+                        class="Featured-Hotels-image" />
+                    <div class="d-flex flex-row">
+                        <h1 class="Featured-Hotels-name">Switzerland</h1>
+                        <h2 class="Featured-Hotels-rating">4.3<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="icon-star bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg></h2>
+                    </div>
+
+                    <h2 class="Featured-Hotels-destination">Filling fast, next available flight on 2nd Oct</h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                <div class="app-section bg-light shadow my-4 d-flex flex-column justify-content-center">
+                    <div class="d-flex flex-row ">
+                        <h1 class="app-section-heading">Download our app and access <br>exclusive features</h1>
+
+                        <img src="https://booking.webestica.com/assets/images/element/01.png"
+                            class="app-section-image-2" />
+                    </div>
+                    <div class="">
+                        <h2 class="app-section-pera"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="check-icon bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                            </svg>&ensp;24/7 Customer Support</h2>
+                        <h2 class="app-section-pera"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="check-icon bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                            </svg>&ensp;Best price </h2>
+                        <h2 class="app-section-pera"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="check-icon bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                            </svg>&ensp;2Best offer</h2>
+                    </div>
+                    <div class="d-flex">
+                        <img src="https://booking.webestica.com/assets/images/element/google-play.svg"
+                            class="app-section-image" />
+                        <img src="https://booking.webestica.com/assets/images/element/app-store.svg"
+                            class="app-section-image" />
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer-section bg-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div class="footer-section-space">
+                        <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFGJ81p5G5gywfkfUvL4BeFwgDnQEas0_bueae2tjlYOIhRtdiuaUG0RucJkvy16DUYO-VFyBKkzxccHDQDvm0JMG8LAKlydSg=w1852-h932"
+                            class="footer-section-logo" />
+                        <div>
+                            <detail class="footer-section-detail">Departure detective arranging rapturous did believe
+                                him all had supported.</detail><br>
+                            <phone class="footer-section-detail"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg>&ensp; +91 94609-94274</phone><br>
+                            <email class="footer-section-detail"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                </svg>&ensp; piyushsharma@gmail.com</email>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+                    <h1 class="footer-section-bold">Page</h1>
+                    <h2 class="footer-section-detail">About us</h2>
+                    <h2 class="footer-section-detail">Contact us</h2>
+                    <h2 class="footer-section-detail">News and Blog</h2>
+                    <h2 class="footer-section-detail">Meet a Team</h2>
+
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+                    <h1 class="footer-section-bold">Link</h1>
+                    <h2 class="footer-section-detail">Sign up</h2>
+                    <h2 class="footer-section-detail">sign in </h2>
+                    <h2 class="footer-section-detail">Privacy Policy</h2>
+                    <h2 class="footer-section-detail">Terms</h2>
+                    <h2 class="footer-section-detail">Cookie</h2>
+                    <h2 class="footer-section-detail">Support</h2>
+
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+                    <h1 class="footer-section-bold">Global Site</h1>
+                    <h2 class="footer-section-detail">India</h2>
+                    <h2 class="footer-section-detail">California</h2>
+                    <h2 class="footer-section-detail">Indonesia</h2>
+                    <h2 class="footer-section-detail">Canada</h2>
+                    <h2 class="footer-section-detail">Malaysia</h2>
+
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+                    <h1 class="footer-section-bold">Booking</h1>
+                    <h2 class="footer-section-detail">Hotel</h2>
+                    <h2 class="footer-section-detail">Flight</h2>
+                    <h2 class="footer-section-detail">Tour</h2>
+                    <h2 class="footer-section-detail">Cabs</h2>
+
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h1 class="footer-section-bold">Top Links</h1>
+                    <p class="footer-section-detail">Flights&ensp;&ensp; Hotels &ensp;&ensp; Tours&ensp;&ensp; Cabs
+                        &ensp;&ensp; About &ensp;&ensp; Contact us&ensp;&ensp; Blogs &ensp;&ensp; Services &ensp;&ensp;
+                        Detail page&ensp;&ensp; Services&ensp;&ensp; Policy&ensp;&ensp; Testimonials &ensp;&ensp;
+                        Newsletters&ensp;&ensp; Podcasts Protests &ensp;&ensp; NewsCyber &ensp;&ensp; Education
+                        &ensp;&ensp; Sports&ensp;&ensp; Tech and Auto&ensp;&ensp; Opinion &ensp;&ensp; Share Market</p>
+                </div>
+                <h1 class="footer-section-bold">Payment & Seurity</h1>
+                <div class="payment-icon d-flex">
+                    <img src="https://booking.webestica.com/assets/images/element/paypal.svg" class="payment-icon" />
+                    <img src="https://booking.webestica.com/assets/images/element/expresscard.svg"
+                        class="payment-icon" />
+                    <img src="https://booking.webestica.com/assets/images/element/mastercard.svg"
+                        class="payment-icon" />
+                    <img src="https://booking.webestica.com/assets/images/element/visa.svg" class="payment-icon" />
+                    <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFGJ81pC8o_-Bn6ipMPWVytBgmShfEfOvqKH1PpfQ0l2rd8BtNYd2zip0OUZzjxwul5AN--TYZQNJGbDoNbgjOeYvxC1MeRuDA=w1852-h932"
+                        class="payment-icon" />
+                    <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFGJ81r5ah0JoyHVHvl-7AZZFpxzAF8-_1Wni-AahdzO4E2-ryPF0HcaOgMUuBwPkPdoHVrUSOusqmT7N9zmr5UPItewXFcQSg=w2692-h2612"
+                        class="payment-icon" />
+                </div>
+
+                <div class="follow-us-section pt-5 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1 class="follow-us-section-heading">Follow Us</h1>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="follow-us-icon-container">
+                                        <a href="https://twitter.com/Piyushs5321"><i
+                                                class="fab fa-twitter icon"></i></a>
+                                    </div>
+                                    <div class="follow-us-icon-container">
+                                        <a href="https://www.instagram.com/piyushsharma5321/"><i
+                                                class="fab fa-instagram icon"></i></a>
+                                    </div>
+                                    <div class="follow-us-icon-container">
+                                        <a href="https://www.linkedin.com/in/piyushsharmanova/"><i
+                                                class="fab fa-linkedin icon"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.company-logo {
+    height: 40px;
+}
+
+.nav-tag {
+    margin-top: 70px;
+    margin-left: 10px;
+
+}
+
+.details-heading {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+.details-pera {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 16px;
+    color: grey;
+
+}
+
+.detail-image {
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+
+    margin-top: 20px;
+}
+
+.offers-section-card {
+    height: auto;
+    margin: 10px;
+}
+
+.offers-section-img {
+    border-radius: 10%;
+    width: 100%;
+    height: auto;
+}
+
+.offers-section-tag {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+.Luxury-section {
+    background-image: url("https://booking.webestica.com/assets/images/category/hotel/resort/bg-01.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+
+}
+
+.Luxury-section {
+    text-align: center;
+}
+
+.Luxury-section-heading {
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    font-family: "Roboto";
+}
+
+.Luxury-section-pera {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    font-family: "Roboto";
+}
+
+.Luxury-section-btn {
+    width: 250px;
+    height: 60px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.Featured-Hotels-heading {
+    padding-top: 40px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.Featured-Hotels-card {
+    margin-left: 20px;
+}
+
+.Featured-Hotels-image {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+
+
+}
+
+
+
+.Featured-Hotels-heading {
+    padding-top: 40px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.Featured-Hotels-card {
+    margin-left: 20px;
+    height: auto;
+
+}
+
+.Featured-Hotels-image {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+
+
+}
+
+.Featured-Hotels-location {
+    border-radius: 20px;
+    color: white;
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.icon-location {
+    margin-bottom: 3px;
+}
+
+.Featured-Hotels-name {
+    padding-top: 10px;
+
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.Featured-Hotels-price {
+    color: #00b19d;
+    font-size: 18px;
+    text-align: start;
+}
+
+.Featured-Hotels-rating {
+    padding-left: 10px;
+    font-size: 18px;
+
+
+}
+
+.icon-star {
+    padding-left: 5px;
+    color: yellow;
+    height: 40px;
+}
+
+.our-paterner-heading {
+    padding-top: 40px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.our-paterner-logo {
+    margin: 20px;
+}
+
+.Featured-Hotels-destination {
+
+    font-family: "Roboto";
+    font-size: 15px;
+    color: grey;
+}
+
+.flight-card-1 {
+    margin-bottom: 25px;
+}
+
+.app-section {
+    height: 450px;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.app-section-heading {
+
+    padding-left: 25px;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 70px;
+}
+
+.app-section-pera {
+    padding-left: 20px;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: bold;
+    color: grey;
+
+}
+
+.check-icon {
+    color: #40d953;
+}
+
+.app-section-image {
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.app-section-image-2 {
+    height: 200px;
+    margin-left: 40px;
+}
+
+.footer-section {
+    padding: 25px;
+}
+
+.footer-section-logo {
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.footer-section-detail {
+    color: #cbcbcb;
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+.footer-section-bold {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer-section-space {
+    margin-bottom: 25px;
+}
+
+.payment-icon {
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.follow-us-section {}
+
+.follow-us-section-heading {
+    text-align: center;
+    color: white;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.follow-us-icon-container {
+    background-color: #575757;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 17px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 18px;
+}
+
+.icon {
+    color: white;
+    font-size: 25px;
+}
